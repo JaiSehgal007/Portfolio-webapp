@@ -1,0 +1,17 @@
+body > #root {
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+  max-width: 100vw !important;
+  min-height: 100vh !important;
+  overflow-x: hidden !important;
+  overflow-y: auto !important;
+  background-color: rgb(255, 255, 255) !important;
+}
+*::-webkit-scrollbar {
+  width: 0.4em;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgb(168, 168, 168);
+}

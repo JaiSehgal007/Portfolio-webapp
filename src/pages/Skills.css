@@ -1,0 +1,20 @@
+.slick-slide {
+  height: 24rem;
+  background: linear-gradient(10deg, #ffffff 0%,#b5fbfb  100%);
+  /* border: 2px solid rgb(69, 1, 255); */
+  border-radius: 10px;
+  margin: 0 2px;
+}
+.slick-track {
+  padding-top: 3rem !important;
+  padding-bottom:3rem !important;
+  display: flex !important;
+  align-items: center !important;
+}
+.slick-center {
+  background: linear-gradient(10deg, #ffffff 0%, #7efafa 100%);
+  transition: 0.2s ease all;
+  -webkit-transform: scale(1.18);
+  -moz-transform: scale(1.18);
+  transform: scale(1.18);
+}
