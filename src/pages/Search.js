@@ -171,7 +171,7 @@ const Search = () => {
                       py-2 font-medium focus:outline-none "
                     >
                       <span className="text-left">
-                        How to get are Jai Sehgal's Resume?
+                        How to get Jai Sehgal's Resume?
                       </span>
                       <FiChevronDown
                         className={`${open ? "rotate-180 transform" : ""

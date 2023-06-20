@@ -95,6 +95,8 @@ const Sidebar = () => {
                 data-aos-duration="1100"
                 className=" w-full md:p-3 flex flex-col items-center justify-center focus:outline-none"
                 href="https://mail.google.com/mail/?view=cm&to=jaisehgal511@gmail.com"
+                target="_blank"
+                  rel="noreferrer"
               >
                 <img
                   loading="lazy"
@@ -111,6 +113,8 @@ const Sidebar = () => {
                 data-aos-duration="1200"
                 className="md:p-3 w-full flex flex-col items-center justify-center focus:outline-none"
                 href="https://in.linkedin.com/in/jai-sehgal-7b702a229"
+                target="_blank"
+                  rel="noreferrer"
               >
                 <img
                   loading="lazy"
@@ -127,6 +131,8 @@ const Sidebar = () => {
                 data-aos-duration="1300"
                 className="md:p-3 w-full flex flex-col items-center justify-center focus:outline-none "
                 href="https://github.com/JaiSehgal007"
+                target="_blank"
+                  rel="noreferrer"
               >
                 <img
                   loading="lazy"
@@ -143,6 +149,8 @@ const Sidebar = () => {
                 data-aos-duration="1400"
                 className="md:p-3 w-full flex flex-col items-center justify-center focus:outline-none"
                 href="https://www.instagram.com/iamjaisehgal/"
+                target="_blank"
+                  rel="noreferrer"
               >
                 <img
                   loading="lazy"

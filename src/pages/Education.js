@@ -80,7 +80,7 @@ const Education = () => {
                         <p className="text-xl font-display font-semibold">
                           Session :
                         </p>
-                        <p className="font-google text-2xl">2016-2017</p>
+                        <p className="font-google text-2xl">2018-2019</p>
                       </span>
                       <span className="flex justify-between w-full px-5 py-2 flex-col">
                         <p className="text-xl font-display font-semibold">
@@ -93,12 +93,12 @@ const Education = () => {
                           School :
                         </p>
                         <p className="font-google text-2xl">
-                          Little Flowers Public Senior Secondary School
+                          Dyal Singh Public School
                         </p>
                       </span>
                       <span className="flex justify-between w-full px-5 py-2 flex-col">
-                        <p className="text-xl font-sans font-bold">CGPA :</p>
-                        <p className="font-google text-2xl">10 CGPA</p>
+                        <p className="text-xl font-sans font-bold">Percentage :</p>
+                        <p className="font-google text-2xl">96.2%</p>
                       </span>
                     </div>
                   </div>
@@ -116,7 +116,7 @@ const Education = () => {
                         <p className="text-xl font-display font-semibold">
                           Session :
                         </p>
-                        <p className="font-google text-2xl">2018-2019</p>
+                        <p className="font-google text-2xl">2020-2021</p>
                       </span>
                       <span className="flex justify-between w-full px-5 py-2 flex-col">
                         <p className="text-xl font-display font-semibold">
@@ -129,14 +129,14 @@ const Education = () => {
                           School :
                         </p>
                         <p className="font-google text-2xl">
-                          Little Flowers Public Senior Secondary School
+                          Dyal Singh Public School
                         </p>
                       </span>
                       <span className="flex justify-between w-full px-5 py-2 flex-col">
                         <p className="text-xl font-sans font-bold">
                           Percentage :
                         </p>
-                        <p className="font-google text-2xl">95.6%</p>
+                        <p className="font-google text-2xl">95.2%</p>
                       </span>
                     </div>
                   </div>
@@ -154,30 +154,29 @@ const Education = () => {
                         <p className="text-xl font-display font-semibold">
                           Session :
                         </p>
-                        <p className="font-google text-2xl">2019-2023</p>
+                        <p className="font-google text-2xl">2021-2025</p>
                       </span>
 
                       <span className="flex justify-between w-full px-5 py-2 flex-col">
                         <p className="text-xl font-display font-semibold">
                           Branch :
                         </p>
-                        <p className="font-google text-2xl">CSE</p>
+                        <p className="font-google text-2xl">Information Technology</p>
                       </span>
                       <span className="flex justify-between w-full px-5 py-2 flex-col">
                         <p className="text-xl font-display font-semibold">
                           College :
                         </p>
                         <p className="font-google text-2xl">
-                          Dr. Akhilesh Das Gupta Institute Of Technology &
-                          Management
+                          National Institute of Technology, Kurukshetra
                         </p>
                       </span>
                       <span className="flex justify-between w-full px-5 py-2 flex-col">
                         <p className="text-xl font-display font-semibold">
-                          Percentage :
+                          SGPA :
                         </p>
                         <p className="font-google text-2xl">
-                          88.71%(till 6th semester)
+                          8.91%(till 3th semester)
                         </p>
                       </span>
                     </div>
