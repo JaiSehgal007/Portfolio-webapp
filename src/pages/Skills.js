@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import News from "../assets/googleNews.webp";
+// import News from "../assets/googleNews.webp";
 import { MdArrowBackIos, MdArrowForwardIos } from "react-icons/md";
 import Slider from "react-slick";
 import Loader from "../layout/Loader";
@@ -8,6 +8,7 @@ import { skills } from "../data/SkillsData";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./Skills.css";
+import "./Skillcard.css";
 
 const Skills = () => {
   let [skillset] = useState(skills);
@@ -42,12 +43,12 @@ const Skills = () => {
     return () => clearTimeout(timer);
   }, []);
   return (
-    <div className="skills flex flex-col h-[calc(100vh_-_3rem)] md:h-[calc(100vh_-_4rem)] overflow-y-auto overflow-hidden w-screen items-center">
+    <div style={{ background: "linear-gradient(to top, rgba(159, 217, 252, 0.5), rgba(195, 229, 250, 0.2))" }} className="skills flex flex-col h-[calc(100vh_-_3rem)] md:h-[calc(100vh_-_4rem)] overflow-y-auto overflow-hidden w-screen items-center">
       {!show ? (
         <Loader title="Skills" />
       ) : (
         <div className="w-screen">
-          <Navbar image={News} title="Skills" search="skills" />
+          <Navbar image="https://lh3.googleusercontent.com/Iyn9yCCDxgHqvjX5jMZ_looun-kL0Sk60FraoMU5-JQG2WstyK6QNzj3JguQRbvQmWqVBSoO88Oh1kGQAoXMPkIIEF0pQrvXL52XXw=h120" title="Skills" search="skills" />
           <div
             data-aos="zoom-in"
             data-aos-duration="1100"
@@ -59,9 +60,12 @@ const Skills = () => {
               className="w-full flex items-center"
             >
               {Object.values(skillset).map((s, idx) => (
+                <div className="container glass flex flex-col items-center p-3 font-google" >
+
+                
                 <div
                   className="flex flex-col items-center p-3 font-google"
-                  key={idx}
+                  key={idx} 
                 >
                   <h1 className="text-center text:xl md:text-2xl font-serif font-semibold text-black hover:underline underline-offset-2 ">
                     {s[0].heading}
@@ -78,22 +82,25 @@ const Skills = () => {
                           className="w-1/5 mr-1 sm:mr-3 rounded-lg p-1 shadow bg-white"
                           alt=""
                         />
-                        <figcaption className=" md:text-lg">
+                        <figcaption className="text-black md:text-lg">
                           {i.title}
                         </figcaption>
                       </figure>
                     </a>
                   ))}
                 </div>
+
+                </div>
+
               ))}
             </Slider>
           </div>
           <div className="flex absolute inset-y-1/2 w-screen justify-between px-2 pr-0 items-center z-10">
             <button onClick={() => slider?.current?.slickPrev()}>
-              <MdArrowBackIos className="text-5xl text-indigo-700 hover:text-indigo-800" />
+              <MdArrowBackIos className="text-5xl text-blue-700 hover:text-blue-800" />
             </button>
             <button onClick={() => slider?.current?.slickNext()}>
-              <MdArrowForwardIos className="text-5xl text-indigo-700 hover:text-indigo-800" />
+              <MdArrowForwardIos className="text-5xl text-blue-700 hover:text-blue-800" />
             </button>
           </div>
         </div>

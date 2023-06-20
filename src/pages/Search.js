@@ -171,6 +171,38 @@ const Search = () => {
                       py-2 font-medium focus:outline-none "
                     >
                       <span className="text-left">
+                        How to get are Jai Sehgal's Resume?
+                      </span>
+                      <FiChevronDown
+                        className={`${open ? "rotate-180 transform" : ""
+                          } text-xl text-[#70757A]`}
+                      />
+                    </Disclosure.Button>
+                    <Disclosure.Panel className="pb-2">
+                      <a href="https://drive.google.com/file/d/1wTvk1jlLIco89LS4w0lNFs8MRoGS4EqA/view?usp=sharing" target="_blank" rel="noreferrer" className="flex flex-col group">
+                        <p className="text-xs xs:text-base">
+                          You can easliy get the resume by clinking the link below
+                        </p>
+                        <span className="flex text-sm items-center mt-2 text-gray-500">
+                          https://drive.google.com › drive › Resume{" "}
+                          <BiDotsVerticalRounded className="text-base ml-7" />
+                        </span>
+                        <h2 className="text-[#1A0DAB] text-md group-hover:underline">
+                          Jai Sehgal's - Resume
+                        </h2>
+                      </a>
+                    </Disclosure.Panel>
+                  </>
+                )}
+              </Disclosure>
+              <Disclosure>
+                {({ open }) => (
+                  <>
+                    <Disclosure.Button
+                      className="flex text-sm sm:text-base w-full justify-between border-t border-gray-300 
+                      py-2 font-medium focus:outline-none "
+                    >
+                      <span className="text-left">
                         What are Jai Sehgal's Skills?
                       </span>
                       <FiChevronDown

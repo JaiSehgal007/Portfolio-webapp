@@ -87,6 +87,13 @@ export const skills = {
       url: mongodbIcon,
       link: "https://www.mongodb.com/",
     },
+    {
+      id:2,
+      heading: "MySQL",
+      title: "MySQL",
+      url: mongodbIcon,
+      link: "https://www.mongodb.com/",
+    }
   ],
   DevelopmentTools: [
     {
@@ -112,19 +119,13 @@ export const skills = {
   CloudServices: [
     {
       id: 1,
-      heading: "Cloud Services",
-      title: "Heroku",
-      url: herokuIcon,
-      link: "https://dashboard.heroku.com/login",
-    },
-    {
-      id: 2,
       title: "Firebase",
+      heading:"Cloud Services",
       url: firebaseIcon,
       link: "https://firebase.google.com/",
     },
     {
-      id: 3,
+      id: 2,
       title: "Netlify",
       url: netlifyIcon,
       link: "https://www.netlify.com/",

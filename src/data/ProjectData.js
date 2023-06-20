@@ -1,10 +1,10 @@
 import Portfolio from "../assets/portfolio.webp";
-// import Ecommerce from "../assets/ecommerce.webp";
-import Whatsapp from "../assets/whatsapp.webp";
-import Todolist from "../assets/todolist.webp";
-import InstagramClone from "../assets/instagramClone.webp";
-import Calculator from "../assets/calculator.webp";
+import MessangerPegion from "../assets/MessengerPegion.png";
+import CloudNotebook from "../assets/CloudNotebook.png";
+import Todolist from "../assets/todolist.jpg";
+// import Calculator from "../assets/calculator.webp";
 import Moo from "../assets/Moo.jpg";
+import Finalym from "../assets/Finalym.png"
 
 export const projectData = [
   {
@@ -30,90 +30,87 @@ export const projectData = [
   {
     id: 2,
     image: Portfolio,
-    summary: "Portfolio Web-app made using React & Tailwind CSS.",
+    summary: "Portfolio Web-app made using React, Tailwind CSS and Firebase",
     overlay: "Portfolio- Webapplication",
     title: "Portfolio Web-app",
-    features: ["My Portfolio web application is based on GOOGLE theme."],
-    techStack: ["React", "Tailwind CSS"],
+    features: ["My Portfolio web application is based on GOOGLE theme with its backend hosted on Firebase"],
+    techStack: ["React", "Tailwind CSS","Firebase"],
     links: [
-      "https://pranjay-vats-portfolio.netlify.app/",
-      "https://github.com/PranjayVats/MyPortfolio",
+      "https://github.com/JaiSehgal007/Portfolio-webapp",
     ],
   },
 
   {
     id: 3,
-    image: InstagramClone,
-    summary: "Instagram clone Web-app made using React & Firebase.",
-    overlay: "InstagramClone- Webapplication",
-    title: "Instagram Clone Web-app",
+    image: CloudNotebook,
+    summary: "Cloud Notebook is a Web-app built using MERN stack, it helps to Keep all your notes on cloud servers",
+    overlay: "Cloud Notebook",
+    title: "Cloud Notebook - Web App",
     features: [
       "Some key features are: ",
-      "1. Real-time Uploading of Post and Comments.",
-      "2. Deployed on Firebase.",
+      "1. Login and Signup functionality is provided to the user to ensure privacy.",
+      "2. A seprate client and server set up, making of a backend api using Nodejs and Expressjs",
+      "2. The user dashboard features all teh CRUD operations in it",
     ],
-    techStack: ["React", "Firebase"],
+    techStack: ["React", "MongoDB","Expressjs","Nodejs","Javascript"],
     links: [
-      "https://instagram-clone-pv.web.app/",
-      "https://github.com/PranjayVats/instagram-clone",
+      "https://github.com/JaiSehgal007/CloudNotebook",
     ],
   },
 
   {
     id: 4,
-    image: Whatsapp,
-    summary: "Whatsapp clone Web-app made using MERN stack and Firebase .",
-    overlay: "WhatsappClone- Webapplication",
-    title: "Whatsapp-clone Web-app",
+    image: MessangerPegion,
+    summary: "Messanger Pigeon is a news app created with React",
+    overlay: "Messanger Pigeon",
+    title: "Messanger Pigeon Web-app",
     features: [
       "Some key features are:",
-      "Real-time chat feature with the help of Firebase.",
-      "Backend and Frontend hosted on Netlify.",
+      "News are fetched with the use of external API",
+      "News Can Be Views based on different categories and country",
+      "User also get the availability to check news based on specific time and popularity"
     ],
     techStack: [
       "React",
-      "MongoDB",
-      "ExpressJS",
-      "NodeJS",
-      "Pusher",
-      "Firebase",
+      "Javascript",
+      "News API"
     ],
     links: [
-      "https://basic-whatsapp-clone-app.netlify.app",
-      "https://github.com/PranjayVats/whatsapp-clone",
+      "https://github.com/JaiSehgal007/MessengerPigeon",
     ],
   },
+  
   {
     id: 5,
+    image: Finalym,
+    summary: "Final Year Marketplace - A web application",
+    overlay: "FinalYear Marketplace",
+    title: "Final Year Marketplace",
+    features: [
+      "It’s a webapplication made with the help of MERN stack and Firebase",
+      "Some key features are:",
+      "1. It used authentication system for each user",
+      "2. It helps the final year students to sell their belongings that are needed by the college freshers",
+      "3. It enables seamless communication between students and seniors, facilitating convenient buying and selling opportunities."
+    ],
+    techStack: ["React", "MongoDB","NodeJs","ExpressJs", "Firebase", "Javascript"],
+    links: [],
+  },
+  {
+    id: 6,
     image: Todolist,
-    summary: "Todolist Web-app made using MERN stack.",
-    overlay: "Todolist- Webapplication",
-    title: "Todolist Web-app",
+    summary: "Todolist Mobile app made using React-Native",
+    overlay: "Todolist-Mobile Application",
+    title: "Todolist Mobile Application",
     features: [
       "It’s a basic todolist webapplication",
       "Some key features are:",
       "1. Filter on todos based on completion.",
       "2. Feature to 'Add', 'Delete' and 'Edit' of todos.",
-      "3. Frontend deployed on Firebase.",
-      "4. Backend deployed on Netlify.",
     ],
-    techStack: ["React", "MongoDB", "ExpressJS", "NodeJS"],
+    techStack: ["React-Native", "Javascript"],
     links: [
-      "https://simple-todolist-webapp.netlify.app",
-      "https://github.com/PranjayVats/Simple-Todolist-Webapp",
-    ],
-  },
-  {
-    id: 6,
-    image: Calculator,
-    summary: "Simple Calculator Web-app made using React.",
-    overlay: "Simple Calculator",
-    title: "Simple Calculator Web-app",
-    features: ["Calculator web application to perform basic calculations."],
-    techStack: ["React", "HTML", "CSS", "Javascript"],
-    links: [
-      "https://basic-calculator-reactjs.netlify.app",
-      "https://github.com/PranjayVats/my-react-calculator",
+      "https://github.com/JaiSehgal007/Todo-List",
     ],
   },
 ];

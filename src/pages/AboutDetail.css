@@ -1,0 +1,10 @@
+.mainContainer{
+    display:flex;
+    height: 100vh;
+}
+
+@media (max-width: 523px){
+    .mainContainer{
+        display: block;
+    }
+}

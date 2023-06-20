@@ -151,7 +151,7 @@ const Projects = () => {
                           {p.summary}
                         </figcaption>
                       </figure>
-                      <div className="absolute -left-2048 group-hover:left-0 bottom-0 right-0 transition-all duration-700 opacity-10 ease-in-out bg-gradient-to-r from-blue-800 to-blue-500 hover:opacity-90 text-2xl font-google w-full h-full">
+                      <div className="absolute -left-2048 group-hover:left-0 bottom-0 right-0 transition-all duration-700 opacity-10 ease-in-out bg-gradient-to-r from-[#011254] via-[#4f6bd6] to-[#b3dbf2] hover:opacity-90 text-2xl font-google w-full h-full">
                         <h1 className="text-white text-justify text-4xl transition duration-500 font-semibold font-google p-2">
                           {p.overlay}
                         </h1>
@@ -212,14 +212,14 @@ const Projects = () => {
                                     </p>
                                   ))}
                                 </div>
-                                <div className="flex justify-end text-sm sm:text-base w-full">
+                                {links.length!==0 && <div className="flex justify-end text-sm sm:text-base w-full">
                                   <a
                                     href={links[0]}
                                     className="bg-slate-700 text-white px-3 py-1 mx-2 rounded-sm outline-none"
                                   >
                                     Link To Github Repository
                                   </a>
-                                </div>
+                                </div>}
                               </div>
                             </div>
                           </Dialog.Panel>

@@ -13,9 +13,10 @@ const Search = lazy(() => import("./pages/Search"));
 const Skills = lazy(() => import("./pages/Skills"));
 const Header = lazy(() => import("./layout/Header"));
 const About = lazy(() => import("./pages/About"));
-const Contact = lazy(() => import("./pages/Contact"));
+// const Contact = lazy(() => import("./pages/Contact"));
 const Education = lazy(() => import("./pages/Education"));
 const Projects = lazy(() => import("./pages/Projects"));
+const NewContact = lazy(() => import("./pages/NewContact"));
 const Error404 = lazy(() => import("./pages/Error404"));
 
 function App() {
@@ -80,14 +81,6 @@ function App() {
                   }
                 />
                 <Route
-                  path="/contact"
-                  element={
-                    <Suspense fallback={<>...</>}>
-                      <Contact />
-                    </Suspense>
-                  }
-                />
-                <Route
                   path="/education"
                   element={
                     <Suspense fallback={<>...</>}>
@@ -100,6 +93,14 @@ function App() {
                   element={
                     <Suspense fallback={<>...</>}>
                       <Projects />
+                    </Suspense>
+                  }
+                />
+                <Route
+                  path="/contact"
+                  element={
+                    <Suspense fallback={<>...</>}>
+                      <NewContact />
                     </Suspense>
                   }
                 />

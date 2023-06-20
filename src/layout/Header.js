@@ -6,7 +6,6 @@ import { FcGoogle } from "react-icons/fc";
 import P from "../assets/p-logo.webp";
 import { MdExpandMore } from "react-icons/md";
 import Chrome from "../assets/chrome.webp";
-// import Photos from "../assets/googlePhotos.webp";
 import Classroom from "../assets/googleClassroom.webp";
 import Gmail from "../assets/gmail.webp";
 import Drive from "../assets/drive.webp";
