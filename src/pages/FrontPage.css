@@ -162,7 +162,7 @@
         box-shadow: 0 15px 10px rgba(0, 0, 0, 0.4);
         border-radius: 10px;
         position: fixed;
-        right: 120vw;
+        /* right: 120vw; */
         top: 40vh;
     }
     
@@ -338,7 +338,7 @@
     .btns {
         width: 100%;
         position: relative;
-        left: 150px;
+        /* left: 150px; */
     }
     
     #myButton {
@@ -515,7 +515,7 @@
     .btns {
         width: 100%;
         position: relative;
-        left: 150px;
+        /* left: 150px; */
     }
     
     #myButton {
@@ -692,7 +692,7 @@
     .btns {
         width: 100%;
         position: relative;
-        left: 150px;
+        /* left: 150px; */
     }
     
     #myButton {
