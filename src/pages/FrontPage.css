@@ -515,7 +515,7 @@
     .btns {
         width: 100%;
         position: relative;
-        /* left: 150px; */
+        left: 150px;
     }
     
     #myButton {
@@ -692,7 +692,7 @@
     .btns {
         width: 100%;
         position: relative;
-        /* left: 150px; */
+        left: 150px;
     }
     
     #myButton {
