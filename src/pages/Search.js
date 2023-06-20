@@ -46,7 +46,7 @@ const Search = () => {
               />
             </div>
             <div className="flex border text-sm sm:text-base shadow-md justify-between border-gray-200 rounded-3xl px-5 py-2.5 h-auto w-3/4 lg:w-1/2  hover:shadow-customShadow">
-              Jai Sehgal's Protfolio{" "}
+              Jai Sehgal's Portfolio{" "}
               <IoMdClose className="text-lg sm:text-2xl" />
             </div>
           </div>
