@@ -291,7 +291,7 @@ const Search = () => {
                   <BiDotsVerticalRounded className="text-base ml-7" />
                 </span>
                 <h2 className="text-[#1A0DAB] text-xl group-hover:underline">
-                  Jai Sehgal - MyContact
+                  Jai Sehgal - Contact
                 </h2>
                 <p className="text-sm text-[#65696E] mt-2">
                   Gmail Id: jaisehgal511@gmail.com , ...
@@ -320,7 +320,7 @@ const Search = () => {
                 />
                 My name is Jai Sehgal, I am pursuing my Bachelor in
                 Technology degree in Information Technology from National 
-                Institiute if Technolgy, Kurukshetra.
+                Institiute of Technolgy, Kurukshetra.
                 I have a profound passion for competitive coding. In addition to 
                 being a full stack developer, I have also delved into the realm of app development. 
                 Contributing to open source projects is another avenue through which I actively 
