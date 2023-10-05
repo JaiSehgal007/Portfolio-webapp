@@ -17,7 +17,7 @@ const AboutDetails = () => {
                 />
                 <a
                     className="flex rounded-3xl justify-between border border-orange-500 items-center p-2 animate-bounce mt-8 font-google xs:text-lg sm:text-xl font-medium text-[#676767]"
-                    href="https://drive.google.com/file/d/1wTvk1jlLIco89LS4w0lNFs8MRoGS4EqA/view?usp=sharing"
+                    href="https://drive.google.com/file/d/1qkJtIhYAP1FCD6_8jELq_3MVPyElQynz/view?usp=sharing"
                     target="_blank"
                     rel="noreferrer"
                     style={{ width: '80%' }}
