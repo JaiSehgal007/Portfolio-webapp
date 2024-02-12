@@ -72,6 +72,7 @@ const Home = () => {
           <Typewriter
             options={{
               strings: [
+                "Machine Learning Lover",
                 "Full Stack Developer",
                 "App Developer",
                 "Competitive Coder",
