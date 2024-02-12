@@ -22,40 +22,50 @@ const Error404 = lazy(() => import("./pages/Error404"));
 function App() {
   useEffect(() => {
     AOS.init();
+
+    // Set the initial background color
+    document.body.style.backgroundColor = "black";
+
+    // Clean up function to reset background color when component unmounts
+    return () => {
+      document.body.style.backgroundColor = "";
+    };
   }, []);
 
   const [beforeLoad, setBeforeLoad] = useState(true);
   const [loaderTime, setloaderTime] = useState(true);
+
   const handleOnClick = () => {
     setBeforeLoad(false);
+    // Change background color to white after click
+    document.body.style.backgroundColor = "white";
   };
 
   useEffect(() => {
-    if(beforeLoad===false){
+    if (beforeLoad === false) {
       setTimeout(() => {
-        setloaderTime(false)
+        setloaderTime(false);
       }, 2500);
     }
   }, [beforeLoad]);
 
   return (
-    <>
-      {beforeLoad? (
+    <div>
+      {beforeLoad ? (
         <FrontPage handleOnClick={handleOnClick} />
-      ) : (loaderTime)?
-       (
-        <div style={{marginTop:'60px'}}>
-          <Loader title={`Lets Dive Into a New World`}/>
+      ) : loaderTime ? (
+        <div style={{ marginTop: '60px' }}>
+          <Loader title={`Lets Dive Into a New World`} />
         </div>
-       ):
-        
-        (<Suspense fallback={<>...</>}>
+      ) : (
+        <Suspense fallback={<>...</>}>
           <Fragment>
             <ToastContainer />
             <Router>
-            <Header />
+              <Header />
               <Routes>
                 <Route path="/" element={<Home />} />
+                {/* <Route path="/try" element={<AnimationBackground />} /> */}
                 <Route
                   path="/search"
                   element={
@@ -117,7 +127,7 @@ function App() {
           </Fragment>
         </Suspense>
       )}
-    </>
+    </div>
   );
 }
 
