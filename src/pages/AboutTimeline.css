@@ -6,6 +6,10 @@
     margin: 100px auto;
 }
 
+.container{
+    height: 15vh;
+}
+
 .container {
     padding: 10px 50px;
     margin-bottom: 20px;
@@ -20,12 +24,12 @@
 @keyframes movedown {
     0% {
         opacity: 1;
-        transform: translateY(-30px);
+        /* transform: translateY(-30px); */
     }
 
     100% {
         opacity: 1;
-        transform: translateY(0px);
+        /* transform: translateY(0px); */
     }
 
 }

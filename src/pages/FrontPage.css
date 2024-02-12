@@ -1,719 +1,359 @@
 /* Add responsive styles for different screen sizes */
 
-@media (max-width:758px) {
-    .text-sphere {
-        position: relative;
-        top: 0;
-        width: 180vw;
-        height: 180vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: #000000;
-    }
-    
-    .tagcloud {
-        display: inline-block;
-        top: 0;
-        left: 0;
-        font-weight: 600;
-        letter-spacing: 0.0625em;
-        font: 1.1em;
-        opacity: 0.5;
-    }    
-    .main-ele::after {
-        position: absolute;
-        content: '';
-        height: 200px;
-        width: 200px;
-        border-radius: 50%;
-        left: 80%;
-        top: 5%;
-        background: linear-gradient(45deg, #130138, #ffd9fc);
-        animation: object2 6s linear infinite;
-    }
-    
-    .main-ele {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-    }
-    
-    #elevated {
-        position: relative;
-        width: 100%;
-        height: 100%;
-        z-index: 1;
-    }
-    
+.container {
+    position: absolute;
+    display: block;
+    width: 100vw;
+    height: 100vh;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; 
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+}
+
+.text-sphere {
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
+
+.tagcloud {
+    display: inline-block;
+    top: 0;
+    left: 0;
+    font-weight: 600;
+    letter-spacing: 0.0625em;
+    font: calc(0.8vw + 1vh + 1vmin);
+    opacity: 0.5;
+}
+
+.main-ele {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: calc(100vh - 80px);
+    justify-content: center;
+    align-items: center;
+    padding: 0 5%;
+    overflow: hidden;
+}
+
+.cols0 {
+    width: 60%;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+}
+
+.topline {
+    display: block;
+    position: relative;
+    font-size: calc(1.5vw + 1vh + 1vmin);
+    letter-spacing: 5px;
+    color: #f6d7ff;
+}
+
+.topline::after {
+    position: absolute;
+    content: '';
+    height: 4px;
+    width: 45px;
+    bottom: 10px;
+    background-color: #c700ff;
+}
+
+.type {
+    display: block;
+    font-size: calc(2.8vw + 2vh + 2vmin);
+    font-weight: 800;
+    color: #f6d7ff;
+}
+
+.multiText {
+    color: #c700ff;
+    text-transform: capitalize;
+}
+
+.btns {
+    width: 100%;
+    position: relative;
+    margin-left: 5px;
+}
+
+#myButton {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: calc(0.8vw + 1vh + 1vmin);
+    font-weight: 600;
+    color: #210038;
+    background-color: #f6d7ff;
+    padding: 8px 14px;
+    margin: 40px 5px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    box-shadow: 0 15px 10px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+}
+
+#myButton:hover {
+    color: #f5e5ff;
+    background-color: #8e04ff;
+}
+
+@media (max-width: 758px) {
     .text-sphere::after {
         position: absolute;
         content: '';
-        height: 60px;
-        width: 60px;
+        height: 6vw;
+        width: 6vw;
         border-radius: 50%;
         left: 73%;
         top: 80%;
         background: linear-gradient(45deg, #130138, #ffd9fc);
         animation: object3 6s linear infinite;
     }
-    
+
     @keyframes object3 {
         50% {
             left: 75%;
             top: 82%;
         }
     }
-    
-    @keyframes object1 {
-        50% {
-            left: -32%;
-            top: 62%;
-        }
+
+    .main-ele::after {
+        position: absolute;
+        content: '';
+        height: 10vw;
+        width: 10vw;
+        border-radius: 50%;
+        left: 80%;
+        top: 5%;
+        background: linear-gradient(45deg, #130138, #ffd9fc);
+        animation: object2 6s linear infinite;
     }
-    
+
     @keyframes object2 {
         50% {
             left: 82%;
             top: 6%;
         }
     }
-    
-    .tagcloud--item {
-        color: #ff44ff;
-        /* text-transform: uppercase; */
-    }
-    
-    .tagcloud--item:hover {
-        color: #d0ff8e;
-    }
-    
-    
-    
-    
-    
-    .wrapper {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        height: calc(100vh - 80px);
-        justify-content: center;
-        align-items: center;
-        padding: 0 5%;
-        overflow: hidden;
-    }
-    
-    .cols0 {
-        width: 60%;
-        z-index: 5;
-        display: block;
-    }
-    
-    .topline {
-        display: block;
-        position: relative;
-        font-size: 25px;
-        letter-spacing: 5px;
-        color: #f6d7ff;
-        position: fixed;
-        top: 25vh;
-    }
-    
-    .topline::after {
-        position: absolute;
-        content: '';
-        height: 4px;
-        width: 45px;
-        bottom: 10px;
-        background-color: #c700ff;
-    }
-    
-    .type {
-        position:fixed;
-        top: 30vh;
-        font-size: 2em;
-        font-weight: 800;
-        color: #f6d7ff;
-
-    }
-    
-    .multiText {
-        color: #c700ff;
-        text-transform: capitalize;
-    }
-    
-    .btns {
-        width: 100%;
-        position: relative;
-    }
-    
-    #myButton {
-        outline: none;
-        border: none;
-        cursor: pointer;
-        font-size: 25px;
-        font-weight: 600;
-        color: #210038;
-        background-color: #f6d7ff;
-        padding: 8px 14px;
-        margin: 40px 5px;
-        letter-spacing: 2px;
-        text-transform: capitalize;
-        box-shadow: 0 15px 10px rgba(0, 0, 0, 0.4);
-        border-radius: 10px;
-        position: fixed;
-        /* right: 120vw; */
-        top: 40vh;
-    }
-    
-    #myButton:hover {
-        color: #f5e5ff;
-        background-color: #8e04ff;
-    }
 
     .text-sphere::before {
         position: absolute;
         content: '';
-        height: 600px;
-        width: 600px;
+        height: 30vw;
+        width: 30vw;
         border-radius: 50%;
         left: -30%;
         top: 60%;
         background: linear-gradient(45deg, #130138, #ffd9fc);
         animation: object1 6s linear infinite;
+    }
+
+    @keyframes object1 {
+        50% {
+            left: -32%;
+            top: 62%;
+        }
     }
 }
 
-
 @media (min-width: 758px) and (max-width: 1043px) {
-    .text-sphere {
-        position: relative;
-        top: 0;
-        width: 110vw;
-        height: 110vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: #000000;
-    }
-    
-    .tagcloud {
-        display: inline-block;
-        top: 0;
-        left: 0;
-        font-weight: 600;
-        letter-spacing: 0.0625em;
-        font: 1.1em;
-        opacity: 0.5;
-    }
-    
     .text-sphere::before {
         position: absolute;
         content: '';
-        height: 600px;
-        width: 600px;
+        height: 30vw;
+        width: 30vw;
         border-radius: 50%;
         left: -30%;
         top: 60%;
         background: linear-gradient(45deg, #130138, #ffd9fc);
         animation: object1 6s linear infinite;
     }
-    
-    .main-ele::after {
-        position: absolute;
-        content: '';
-        height: 200px;
-        width: 200px;
-        border-radius: 50%;
-        left: 80%;
-        top: 5%;
-        background: linear-gradient(45deg, #130138, #ffd9fc);
-        animation: object2 6s linear infinite;
-    }
-    
-    .main-ele {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-    }
-    
-    #elevated {
-        position: relative;
-        z-index: 1;
-    }
-    
-    .text-sphere::after {
-        position: absolute;
-        content: '';
-        height: 60px;
-        width: 60px;
-        border-radius: 50%;
-        left: 73%;
-        top: 80%;
-        background: linear-gradient(45deg, #130138, #ffd9fc);
-        animation: object3 6s linear infinite;
-    }
-    
-    @keyframes object3 {
-        50% {
-            left: 75%;
-            top: 82%;
-        }
-    }
-    
+
     @keyframes object1 {
         50% {
             left: -32%;
             top: 62%;
         }
     }
-    
-    @keyframes object2 {
-        50% {
-            left: 82%;
-            top: 6%;
-        }
-    }
-    
-    .tagcloud--item {
-        color: #ff44ff;
-        /* text-transform: uppercase; */
-    }
-    
-    .tagcloud--item:hover {
-        color: #d0ff8e;
-    }
-    
-    
-    
-    
-    
-    .wrapper {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        height: calc(100vh - 80px);
-        justify-content: center;
-        align-items: center;
-        padding: 0 5%;
-        overflow: hidden;
-    }
-    
-    .cols0 {
-        width: 60%;
-        z-index: 5;
-        display: block;
-    }
-    
-    .topline {
-        display: block;
-        position: relative;
-        font-size: 35px;
-        letter-spacing: 5px;
-        color: #f6d7ff;
-    }
-    
-    .topline::after {
-        position: absolute;
-        content: '';
-        height: 4px;
-        width: 45px;
-        bottom: 10px;
-        background-color: #c700ff;
-    }
-    
-    .type {
-        display: block;
-        font-size: 2.8em;
-        font-weight: 800;
-        color: #f6d7ff;
-    }
-    
-    .multiText {
-        color: #c700ff;
-        text-transform: capitalize;
-    }
-    
-    
-    .btns {
-        width: 100%;
-        position: relative;
-        /* left: 150px; */
-    }
-    
-    #myButton {
-        outline: none;
-        border: none;
-        cursor: pointer;
-        font-size: 25px;
-        font-weight: 600;
-        color: #210038;
-        background-color: #f6d7ff;
-        padding: 8px 14px;
-        margin: 40px 5px;
-        letter-spacing: 2px;
-        text-transform: capitalize;
-        box-shadow: 0 15px 10px rgba(0, 0, 0, 0.4);
-        border-radius: 10px;
-    }
-    
-    #myButton:hover {
-        color: #f5e5ff;
-        background-color: #8e04ff;
-    }
-  }
-  
-  @media (min-width: 1043px) and (max-width: 1341px) {
-    .text-sphere {
-        position: relative;
-        top: 0;
-        width: 100%;
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: #000000;
-    }
-    
-    .tagcloud {
-        display: inline-block;
-        top: 0;
-        left: 0;
-        font-weight: 600;
-        letter-spacing: 0.0625em;
-        font: 1.1em;
-        opacity: 0.5;
-    }
-    
-    .text-sphere::before {
-        position: absolute;
-        content: '';
-        height: 600px;
-        width: 600px;
-        border-radius: 50%;
-        left: -12%;
-        top: 40%;
-        background: linear-gradient(45deg, #130138, #ffd9fc);
-        animation: object1 6s linear infinite;
-    }
-    
-    .main-ele::after {
-        position: absolute;
-        content: '';
-        height: 200px;
-        width: 200px;
-        border-radius: 50%;
-        left: 80%;
-        top: 5%;
-        background: linear-gradient(45deg, #130138, #ffd9fc);
-        animation: object2 6s linear infinite;
-    }
-    
-    .main-ele {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-    }
-    
-    #elevated {
-        position: relative;
-        z-index: 1;
-    }
-    
-    .text-sphere::after {
-        position: absolute;
-        content: '';
-        height: 60px;
-        width: 60px;
-        border-radius: 50%;
-        left: 73%;
-        top: 80%;
-        background: linear-gradient(45deg, #130138, #ffd9fc);
-        animation: object3 6s linear infinite;
-    }
-    
-    @keyframes object3 {
-        50% {
-            left: 75%;
-            top: 82%;
-        }
-    }
-    
-    @keyframes object1 {
-        50% {
-            left: -13%;
-            top: 41%;
-        }
-    }
-    
-    @keyframes object2 {
-        50% {
-            left: 82%;
-            top: 6%;
-        }
-    }
-    
-    .tagcloud--item {
-        color: #ff44ff;
-        /* text-transform: uppercase; */
-    }
-    
-    .tagcloud--item:hover {
-        color: #d0ff8e;
-    }
-    
-    
-    
-    
-    
-    .wrapper {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        height: calc(100vh - 80px);
-        justify-content: center;
-        align-items: center;
-        padding: 0 5%;
-        overflow: hidden;
-    }
-    
-    .cols0 {
-        width: 60%;
-        z-index: 5;
-        display: block;
-    }
-    
-    .topline {
-        display: block;
-        position: relative;
-        font-size: 30px;
-        letter-spacing: 5px;
-        color: #f6d7ff;
-    }
-    
-    .topline::after {
-        position: absolute;
-        content: '';
-        height: 4px;
-        width: 45px;
-        bottom: 10px;
-        background-color: #c700ff;
-    }
-    
-    .type {
-        display: block;
-        font-size: 3.9em;
-        font-weight: 800;
-        color: #f6d7ff;
-    }
-    
-    .multiText {
-        color: #c700ff;
-        text-transform: capitalize;
-    }
-    
-    .btns {
-        width: 100%;
-        position: relative;
-        left: 150px;
-    }
-    
-    #myButton {
-        outline: none;
-        border: none;
-        cursor: pointer;
-        font-size: 25px;
-        font-weight: 600;
-        color: #210038;
-        background-color: #f6d7ff;
-        padding: 8px 14px;
-        margin: 40px 5px;
-        letter-spacing: 2px;
-        text-transform: capitalize;
-        box-shadow: 0 15px 10px rgba(0, 0, 0, 0.4);
-        border-radius: 10px;
-    }
-    
-    #myButton:hover {
-        color: #f5e5ff;
-        background-color: #8e04ff;
-    }
-  }
-  
-  @media (min-width: 1341px) {
-    .text-sphere {
-        position: relative;
-        top: 0;
-        width: 100%;
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: #000000;
-    }
-    
-    .tagcloud {
-        display: inline-block;
-        top: 0;
-        left: 0;
-        font-weight: 600;
-        letter-spacing: 0.0625em;
-        font: 1.1em;
-        opacity: 0.5;
-    }
-    
-    .text-sphere::before {
-        position: absolute;
-        content: '';
-        height: 600px;
-        width: 600px;
-        border-radius: 50%;
-        left: -12%;
-        top: 40%;
-        background: linear-gradient(45deg, #130138, #ffd9fc);
-        animation: object1 6s linear infinite;
-    }
-    
-    .main-ele::after {
-        position: absolute;
-        content: '';
-        height: 200px;
-        width: 200px;
-        border-radius: 50%;
-        left: 80%;
-        top: 5%;
-        background: linear-gradient(45deg, #130138, #ffd9fc);
-        animation: object2 6s linear infinite;
-    }
-    
-    .main-ele {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-    }
-    
-    #elevated {
-        position: relative;
-        z-index: 1;
-    }
-    
-    .text-sphere::after {
-        position: absolute;
-        content: '';
-        height: 60px;
-        width: 60px;
-        border-radius: 50%;
-        left: 73%;
-        top: 80%;
-        background: linear-gradient(45deg, #130138, #ffd9fc);
-        animation: object3 6s linear infinite;
-    }
-    
-    @keyframes object3 {
-        50% {
-            left: 75%;
-            top: 82%;
-        }
-    }
-    
-    @keyframes object1 {
-        50% {
-            left: -13%;
-            top: 41%;
-        }
-    }
-    
-    @keyframes object2 {
-        50% {
-            left: 82%;
-            top: 6%;
-        }
-    }
-    
-    .tagcloud--item {
-        color: #ff44ff;
-        /* text-transform: uppercase; */
-    }
-    
-    .tagcloud--item:hover {
-        color: #d0ff8e;
-    }
-    
-    
-    
-    
-    
-    .wrapper {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        height: calc(100vh - 80px);
-        justify-content: center;
-        align-items: center;
-        padding: 0 5%;
-        overflow: hidden;
-    }
-    
-    .cols0 {
-        width: 60%;
-        z-index: 5;
-        display: block;
-    }
-    
-    .topline {
-        display: block;
-        position: relative;
-        font-size: 35px;
-        letter-spacing: 5px;
-        color: #f6d7ff;
-    }
-    
-    .topline::after {
-        position: absolute;
-        content: '';
-        height: 4px;
-        width: 45px;
-        bottom: 10px;
-        background-color: #c700ff;
-    }
-    
-    .type {
-        display: block;
-        font-size: 5em;
-        font-weight: 800;
-        color: #f6d7ff;
-    }
-    
-    .multiText {
-        color: #c700ff;
-        text-transform: capitalize;
-    }
-    
-    .btns {
-        width: 100%;
-        position: relative;
-        left: 150px;
-    }
-    
-    #myButton {
-        outline: none;
-        border: none;
-        cursor: pointer;
-        font-size: 25px;
-        font-weight: 600;
-        color: #210038;
-        background-color: #f6d7ff;
-        padding: 8px 14px;
-        margin: 40px 5px;
-        letter-spacing: 2px;
-        text-transform: capitalize;
-        box-shadow: 0 15px 10px rgba(0, 0, 0, 0.4);
-        border-radius: 10px;
-    }
-    
-    #myButton:hover {
-        color: #f5e5ff;
-        background-color: #8e04ff;
-    }
-  }
 
+    .main-ele::after {
+        position: absolute;
+        content: '';
+        height: 10vw;
+        width: 10vw;
+        border-radius: 50%;
+        left: 80%;
+        top: 5%;
+        background: linear-gradient(45deg, #130138, #ffd9fc);
+        animation: object2 6s linear infinite;
+    }
+
+    @keyframes object2 {
+        50% {
+            left: 82%;
+            top: 6%;
+        }
+    }
+
+    .text-sphere::after {
+        position: absolute;
+        content: '';
+        height: 6vw;
+        width: 6vw;
+        border-radius: 50%;
+        left: 73%;
+        top: 80%;
+        background: linear-gradient(45deg, #130138, #ffd9fc);
+        animation: object3 6s linear infinite;
+    }
+
+    @keyframes object3 {
+        50% {
+            left: 75%;
+            top: 82%;
+        }
+    }
+}
+
+@media (min-width: 1043px) and (max-width: 1341px) {
+    .text-sphere::before {
+        position: absolute;
+        content: '';
+        height: 30vw;
+        width: 30vw;
+        border-radius: 50%;
+        left: -12%;
+        top: 40%;
+        background: linear-gradient(45deg, #130138, #ffd9fc);
+        animation: object1 6s linear infinite;
+    }
+
+    @keyframes object1 {
+        50% {
+            left: -13%;
+            top: 41%;
+        }
+    }
+
+    .main-ele::after {
+        position: absolute;
+        content: '';
+        height: 10vw;
+        width: 10vw;
+        border-radius: 50%;
+        left: 80%;
+        top: 5%;
+        background: linear-gradient(45deg, #130138, #ffd9fc);
+        animation: object2 6s linear infinite;
+    }
+
+    @keyframes object2 {
+        50% {
+            left: 82%;
+            top: 6%;
+        }
+    }
+
+    .text-sphere::after {
+        position: absolute;
+        content: '';
+        height: 6vw;
+        width: 6vw;
+        border-radius: 50%;
+        left: 73%;
+        top: 80%;
+        background: linear-gradient(45deg, #130138, #ffd9fc);
+        animation: object3 6s linear infinite;
+    }
+
+    @keyframes object3 {
+        50% {
+            left: 75%;
+            top: 82%;
+        }
+    }
+}
+
+@media (min-width: 1341px) {
+    .text-sphere::before {
+        position: absolute;
+        content: '';
+        height: 30vw;
+        width: 30vw;
+        border-radius: 50%;
+        left: -12%;
+        top: 50%;
+        background: linear-gradient(45deg, #130138, #ffd9fc);
+        animation: object1 6s linear infinite;
+    }
+
+    @keyframes object1 {
+        50% {
+            left: -13%;
+            top: 52%;
+        }
+    }
+
+    .main-ele::after {
+        position: absolute;
+        content: '';
+        height: 10vw;
+        width: 10vw;
+        border-radius: 50%;
+        left: 89%;
+        top: 2%;
+        background: linear-gradient(45deg, #130138, #ffd9fc);
+        animation: object2 6s linear infinite;
+    }
+
+    @keyframes object2 {
+        50% {
+            left: 87%;
+            top: 6%;
+        }
+    }
+
+    .text-sphere::after {
+        position: absolute;
+        content: '';
+        height: 6vw;
+        width: 6vw;
+        border-radius: 50%;
+        left: 73%;
+        top: 80%;
+        background: linear-gradient(45deg, #130138, #ffd9fc);
+        animation: object3 6s linear infinite;
+    }
+
+    @keyframes object3 {
+        50% {
+            left: 75%;
+            top: 82%;
+        }
+    }
+}
