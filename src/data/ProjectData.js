@@ -38,9 +38,6 @@ export const projectData = [
       "1. Developed a deep learning model using transferlearning for violence detection",
       "2.  98.5% accuracy on the training set.",
       "3. Identifies and saves enhanced frames of violent scenes, along with recognizing and storing associated faces.",
-      "4. Payment feature to buy products.",
-      "5. Admin Dashboard feature to do CRUD operations on User, Products, and Orders by the Admin",
-      "6. Multiple Language and Dark Mode support",
     ],
     techStack: ["Tensorflow,","OpenCV", "Firebase", "Telegram"],
     links: [

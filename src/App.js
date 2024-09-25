@@ -24,7 +24,8 @@ function App() {
     AOS.init();
 
     // Set the initial background color
-    document.body.style.backgroundColor = "black";
+    document.body.style.backgroundColor = "white"; // CHANGED white from black
+
 
     // Clean up function to reset background color when component unmounts
     return () => {
@@ -41,23 +42,26 @@ function App() {
     document.body.style.backgroundColor = "white";
   };
 
-  useEffect(() => {
-    if (beforeLoad === false) {
-      setTimeout(() => {
-        setloaderTime(false);
-      }, 2500);
-    }
-  }, [beforeLoad]);
+
+  // CHANGED commented
+  // useEffect(() => {
+  //   if (beforeLoad === false) {
+  //     setTimeout(() => {
+  //       setloaderTime(false);
+  //     }, 2500);
+  //   }
+  // }, [beforeLoad]);
 
   return (
     <div>
-      {beforeLoad ? (
+      {/* CHANGED commented */}
+      {/* {beforeLoad ? (
         <FrontPage handleOnClick={handleOnClick} />
       ) : loaderTime ? (
         <div style={{ marginTop: '60px' }}>
           <Loader title={`Lets Dive Into a New World`} />
         </div>
-      ) : (
+      ) : ( */}
         <Suspense fallback={<>...</>}>
           <Fragment>
             <ToastContainer />
@@ -126,7 +130,8 @@ function App() {
             </Router>
           </Fragment>
         </Suspense>
-      )}
+      )
+      {/* } */}
     </div>
   );
 }
